@@ -19,6 +19,7 @@
 - Визуализвция:  
   ![bubble sort](https://www.resultswebdev.com/wp-content/themes/results-website-design/uploads/bubble-sort-animation2.gif)
 - Реализация: 
+```cpp
 void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n-1; i++) {
         for (int j = 0; j < n-i-1; j++) {
@@ -28,6 +29,7 @@ void bubbleSort(int arr[], int n) {
         }
     }
 }
+```
 
 - Время работы:  
 Лучшее:O(n)  
@@ -53,6 +55,7 @@ void bubbleSort(int arr[], int n) {
 - Визуализация:
  ![selection sort](https://www.datasciencecentral.com/wp-content/uploads/2021/10/1wgCuMnGOINT5NCbg90Sxsw-1.gif)
 - Реализация:  
+```cpp
 void selectionSort(int arr[], int n) {
     for (int i = 0; i < n-1; i++) {
         int minIndex = i;
@@ -64,6 +67,7 @@ void selectionSort(int arr[], int n) {
         swap(arr[i], arr[minIndex]);
     }
 }
+```
 - Время работы:    
 Лучшее:O(n^2)   
 Среднее:O(n^2)    
@@ -88,6 +92,7 @@ void selectionSort(int arr[], int n) {
 - Визуализвция: 
 ![insertion sort](https://img2020.cnblogs.com/blog/2324401/202103/2324401-20210310204308654-45619857.gif)
 - Реализация:
+```cpp
 void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i];
@@ -99,6 +104,7 @@ void insertionSort(int arr[], int n) {
         arr[j+1] = key;
     }
 }
+```
 - Время работы:  
 Лучшее:O(n)   
 Среднее:O(n^2)    
@@ -129,6 +135,7 @@ void insertionSort(int arr[], int n) {
 - Визуализация: 
  ![counting sort](https://thedukh.com/wp-content/uploads/2021/02/countingsort.gif)
 - Реализация:
+```cpp
 void countingSort(int arr[], int n) {
     int output[n];
     int count[256] = {0};
@@ -150,6 +157,7 @@ void countingSort(int arr[], int n) {
         arr[i] = output[i];
     }
 }
+```
 - Время работы:  
 Лучшее:O(n + k)   
 Среднее:O(n + k)    
@@ -182,6 +190,7 @@ k - диапазон значений элементов
 - Визуализация:
 ![digital sort](https://assets.digitalocean.com/articles/alligator/js/radix-sort/radix-sort-animation-o.gif)
 - Реализация:
+```cpp
 void RadixSort(vector<int>& arr, int exp) {
     vector<int> output(arr.size());
     int count[10] = {0};
@@ -211,6 +220,7 @@ void radixSort(vector<int>& arr) {
         RadixSort(arr, exp);
     }
 }
+```
 - Время работы:  
 Лучшее:O(n + k)
 Среднее:O(n + k)
