@@ -1,0 +1,7 @@
+/home/artur/sort/build/CMakeFiles/bubble.dir
+/home/artur/sort/build/CMakeFiles/insert.dir
+/home/artur/sort/build/CMakeFiles/counting.dir
+/home/artur/sort/build/CMakeFiles/selection.dir
+/home/artur/sort/build/CMakeFiles/radix.dir
+/home/artur/sort/build/CMakeFiles/edit_cache.dir
+/home/artur/sort/build/CMakeFiles/rebuild_cache.dir

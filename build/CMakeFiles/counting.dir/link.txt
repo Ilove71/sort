@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/counting.dir/src/counting.cpp.o -o counting 
