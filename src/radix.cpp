@@ -5,7 +5,7 @@
 #include <algorithm>
 using namespace std;
 
-void countingSort(vector<int>& arr, int exp) {
+void RadixSort(vector<int>& arr, int exp) {
     vector<int> output(arr.size());
     int count[10] = {0};
     
@@ -31,7 +31,7 @@ void radixSort(vector<int>& arr) {
     int maxVal = *max_element(arr.begin(), arr.end());
     
     for (int exp = 1; maxVal/exp > 0; exp *= 10) {
-        countingSort(arr, exp);
+        RadixSort(arr, exp);
     }
 }
 
